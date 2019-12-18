@@ -1,14 +1,15 @@
-/*importy styli*/
 @import "variables";
 @import "mixins";
-
 @import "normalize";
 @import "layout";
-
 @import "sections/leftmenu";
-@import "pages/registration";
+@import "sections/registration_form";
 
 @import "components/top_menu";
-@import "components/mediaQuery";
+@import "components/form_field";
 
 @import "pages/registration";
+
+.1 {
+    color:read-only;
+}
