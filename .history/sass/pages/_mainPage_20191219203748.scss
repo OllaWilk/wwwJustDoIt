@@ -1,0 +1,11 @@
+.topMenuWrapper {
+    background-color: $color-light;
+    width: width: calc(100%-240px);
+}
+
+.topMenu {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+}
+

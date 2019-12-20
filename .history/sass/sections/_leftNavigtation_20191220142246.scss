@@ -1,0 +1,13 @@
+.navigation {
+    width: 240px;
+    height: 100vh;
+    position: fixed;
+    background-color: $color-dark;
+    color: $color-light;
+    padding: 20px;
+    z-index: +1;
+}
+
+.navigationWraper {
+    font-family: "Open Sans", Helvetica, Arial;
+}

@@ -1,0 +1,27 @@
+.navigation {
+    width: 240px;
+    height: 100vh;
+    position: fixed;
+    background-color: $color-dark;
+    color: $color-light;
+    padding: 20px;
+    z-index: +1;
+}
+
+.navigationWraper {
+    font-family: $brand-font;
+}
+
+.navigationTop {
+    display: flex;
+    i {
+        font-size: 25px;
+        margin-left: 70px;
+    }
+}
+
+.logo {
+    font-family: $logo;
+    font-size: 25px;
+    font-weight: 600;
+}

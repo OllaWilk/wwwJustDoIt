@@ -1,0 +1,29 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: $color-background;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $paragraph-font;
+    display: flex;
+}
+
+.container {
+    width: calc(100%-240px);
+    padding: 0 20px;
+    background-color: red;
+    font-size: 50px;
+}
+
+.topMenu {
+    padding: 0 20px;
+    color: red;
+    font-size: 50px;
+}

@@ -5,6 +5,23 @@
 /*font sizes*/
 /*fonts*/
 /*buttons*/
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-position: 10;
+  color: green;
+}
+
 /*buttons*/
 /*buttons*/
 /*buttons*/
@@ -347,10 +364,119 @@ template {
   display: none;
 }
 
-/*html*/
-/*body*/
-/*container*/
-/*side menu*/
-/*registration*/
-/*registration*/
+/*Global*/
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: #E3E3E3;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Open Sans", Helvetica, Arial;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  width: calc(100%-240px);
+  top: 50px;
+  left: 240px;
+  padding: 0 30px 30px 30px;
+  position: absolute;
+  z-index: -1;
+  display: block;
+}
+
+.navigation {
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  background-color: #171717;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.navigationWraper {
+  font-family: "Open Sans", Helvetica, Arial;
+}
+
+.navigationWraper ul {
+  font-size: 16px;
+  list-style-type: none;
+  color: #E3E3E3;
+}
+
+.navigationWraper ul img {
+  height: 16px;
+  margin: 0 5px;
+}
+
+.navigationTop {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+}
+
+.navigationTop i {
+  font-size: 16px;
+  margin-left: 70px;
+}
+
+.logo {
+  font-family: "Satisfy", cursive;
+  font-size: 23px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.navigationList {
+  font-family: "Open Sans", Helvetica, Arial;
+  font-size: 23px;
+  margin-left: 10px;
+}
+
+.topMenu {
+  background-color: #ffffff;
+  width: 100%;
+  height: 50px;
+}
+
+.topMenuWrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  width: auto;
+  margin: 5px 0;
+}
+
+.iconsTopMenu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+  border-left: 2px solid #E3E3E3;
+  padding: 10px 20px 0 20px;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.iconsTopMenu img {
+  height: 16px;
+  margin: 0 5px;
+}
+
+.iconsTopMenu h3 {
+  font-size: 16px;
+  margin: 0 10px;
+  display: block;
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */

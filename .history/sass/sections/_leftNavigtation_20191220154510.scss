@@ -1,0 +1,39 @@
+.navigation {
+    width: 240px;
+    height: 100vh;
+    position: fixed;
+    background-color: $color-dark;
+    color: $color-light;
+    padding: 20px;
+    z-index: +1;
+}
+
+.navigationWraper {
+    font-family: $brand-font;
+    height: 100px;;
+}
+
+.navigationTop {
+    display: flex;
+    align-items: baseline;
+    i {
+        font-size: 23px;
+        margin-left: 70px;
+    }
+}
+
+.logo {
+    font-family: $logo;
+    font-size: 23px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.nawigationImg {
+    font-family: $logo;
+    font-size: 23px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: $color-light;
+}
+
+
