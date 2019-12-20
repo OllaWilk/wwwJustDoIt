@@ -1,0 +1,45 @@
+.navigation {
+    width: 240px;
+    height: 100vh;
+    position: fixed;
+    background-color: $color-dark;
+    color: $color-light;
+    padding: 20px;
+}
+
+.navigationWraper {
+    font-family: $brand-font;
+    ul {
+        font-size: 16px;
+        list-style-type: none;
+        color: $color-background;
+        li {
+            margin: 40px 300px;
+        }
+
+    }
+}
+
+.navigationTop {
+    display: flex;
+    align-items: baseline;
+    i {
+        font-size: 16px;
+        margin-left: 70px;
+    }
+}
+
+.logo {
+    font-family: $logo;
+    font-size: 23px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.navigationList {
+    font-family: $brand-font;
+    font-size: 23px;
+    margin-left: 10px;
+    color: $color-background;
+}
+
+

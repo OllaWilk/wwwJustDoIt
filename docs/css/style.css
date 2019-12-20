@@ -393,13 +393,17 @@ body {
   display: block;
 }
 
+/*UWAGI
+style czcionek nie wczytują się w klasie body
+
+*/
 .navigation {
   width: 240px;
   height: 100vh;
   position: fixed;
   background-color: #171717;
   color: #ffffff;
-  padding: 20px;
+  padding: 10px;
 }
 
 .navigationWraper {
@@ -412,36 +416,64 @@ body {
   color: #E3E3E3;
 }
 
-.navigationWraper ul img {
-  height: 16px;
-  margin: 0 5px;
+.navigationWraper ul li {
+  margin: 20px 0px;
+  padding: 10px;
 }
 
-.navigationTop {
+.navigationWraper ul li:hover {
+  border-left: 4px solid #F58220;
+}
+
+.navigationWraper h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #E3E3E3;
+  margin: 25px 0 10px 10px;
+}
+
+.navigationWraper a {
+  color: #E3E3E3;
+  font-family: "Open Sans", Helvetica, Arial;
+  font-size: 16px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.navigationWraper a img {
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  margin: 20px;
+}
+
+.navigationWraper div {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: baseline;
       align-items: baseline;
 }
 
-.navigationTop i {
+.navigationWraper div i {
   font-size: 16px;
   margin-left: 70px;
 }
 
 .logo {
   font-family: "Satisfy", cursive;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 600;
   margin-left: 10px;
 }
 
-.navigationList {
-  font-family: "Open Sans", Helvetica, Arial;
-  font-size: 23px;
-  margin-left: 10px;
-}
-
+/*.navigationTop {
+    display: flex;
+    align-items: baseline;
+    i {
+        font-size: 16px;
+        margin-left: 70px;
+    }
+}*/
 .topMenu {
   background-color: #ffffff;
   width: 100%;
@@ -454,7 +486,7 @@ body {
   -ms-flex-pack: end;
       justify-content: flex-end;
   width: auto;
-  margin: 5px 0;
+  margin: 5px 10px;
 }
 
 .iconsTopMenu {
@@ -464,19 +496,44 @@ body {
       align-items: baseline;
   border-left: 2px solid #E3E3E3;
   padding: 10px 20px 0 20px;
-  -ms-flex-pack: center;
-      justify-content: center;
 }
 
-.iconsTopMenu img {
-  height: 16px;
-  margin: 0 5px;
+.iconsTopMenu i {
+  display: inline-block;
 }
 
 .iconsTopMenu h3 {
   font-size: 16px;
   margin: 0 10px;
-  display: block;
   font-weight: bold;
 }
+
+.iconsTopMenu p {
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+/*UWAGI
+inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie działa :first-child a działa :last-child
+
+.iconsTopMenu {
+    display: flex;
+    align-items: baseline;
+    border-left: 2px solid $color-background;
+    padding: 10px 20px 0 20px;
+    i {
+        display:inline-block;
+    }
+    h3 {
+        font-size: 16px;
+        margin: 0 10px;
+        font-weight: bold;
+        :first-child{
+            font-weight: bold;
+        }
+    }
+
+}
+
+*/
 /*# sourceMappingURL=style.css.map */
