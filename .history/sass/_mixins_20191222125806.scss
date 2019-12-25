@@ -1,0 +1,25 @@
+/*buttons*/
+.btn {
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid $color-buttonOrangeDark;
+    background-color: $color-buttonOrangeDark;
+    color: $color-light;
+    &:hover {
+      background-color: $color-light;
+      color: $color-dark;
+      border: 1px solid $color-dark;
+    }
+}
+
+  .btnRefrsh {
+    width: 40px;
+    height: 40px;
+}
+
+/*buttons*/
+/*buttons*/

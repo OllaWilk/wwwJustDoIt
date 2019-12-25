@@ -1,0 +1,31 @@
+.mainPage {
+    background-color: $color-light;
+    width: 100%;
+}
+
+.title {
+    color: $color-buttonGreyDark;
+    font-weight: 550;
+    font-size: 25px;
+    border-bottom: 2px solid $color-background;
+    padding: 20px 0 30px 10px;
+}
+
+.dates{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    align-items: baseline;
+}
+
+.datesConteiner {
+    padding: 20px 10px;
+    border: 1px solid $color-background;
+    border-radius: 10px;
+    display: flex;
+}
+
+.dateStart {
+    border-right: 1px solid $color-background;
+    padding-right: 20px;
+}

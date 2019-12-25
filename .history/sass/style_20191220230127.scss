@@ -1,0 +1,13 @@
+/*importy styli*/
+@import "variables";
+@import "mixins";
+
+@import "normalize";
+@import "layout";
+
+@import "sections/leftNavigtation";
+@import "sections/topUserMenu";
+
+@import "pages/mainPage";
+@import "components/mediaQuery";
+

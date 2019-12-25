@@ -1,0 +1,115 @@
+.title {
+    color: $color-buttonGreyDark;
+    font-weight: 550;
+    font-size: 25px;
+    border-bottom: 2px solid $color-background;
+    padding: 12px;
+    margin: 0 20px;
+}
+
+//Daty
+
+.dates {
+    display: flex;
+    padding: 30px;
+    align-items: baseline;
+    border-bottom: 1px solid $color-background;
+    margin: auto;
+
+}
+
+.datesConteiner {
+    padding: 5px 10px;
+    border: 1px solid $color-background;
+    border-radius: 2px;
+    display: flex;
+    align-items: baseline;
+
+    div {
+        border-right: 1px solid $color-background;
+        padding: 0 40px 0 auto;
+        font-size: 16px;
+    }
+    i {
+        color: $color-background;
+        padding-left: 5px;
+    }
+}
+
+.legendWrap {
+    table {
+      margin: 20px auto;
+      width: 70%;
+      tr {
+        border-spacing: 25px; //dlaczego nie działasz?
+        td {
+          position: relative;
+          padding: 0;
+          border-bottom: 3px solid $color-background;
+          width: auto;
+          padding: 5px;
+          h3, p {
+            display: inline;
+            font-family: $brand-font;
+            color: $color-dark;
+            font-size: 16px;
+            font-weight: bold;
+            color: $color-buttonGreyDark;
+          }
+          p {
+            position: absolute;
+            right: 0;
+            margin: 0;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  //LINK SECTION
+
+  .navigation {
+    width: 240px;
+    height: 100vh;
+    position: fixed;
+    background-color: $color-dark;
+    color: $color-light;
+    padding: 10px;
+}
+
+//Linki
+.links {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+    a {
+    font-family: $brand-font;
+    margin: 20px;
+}
+
+.linkWraper {
+    font-family: $brand-font;
+    align-items: baseline;
+    font-size: 16px;
+    color: $color-buttonGreyDark;
+    ul {
+        li {
+            display: flex;
+            //padding: 20px 0px;
+            border-bottom: 1px solid $color-background;
+            &:hover {
+                background-color: $color-background;
+            }
+            p {
+                font-weight: bold;
+            }
+        }
+    }
+    a {
+        color: $color-links;
+        font-family: $brand-font;
+        text-decoration: none;
+        justify-content: center;
+    }
+}

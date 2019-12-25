@@ -1,0 +1,21 @@
+/*buttons*/
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    background-color: $color-buttonOrangeLight;
+}
+
+  .btnRefrsh {
+    border-color:$color-buttonOrangeDark;
+    color: $color-buttonOrangeDark;
+}
+
+/*buttons*/
+/*buttons*/

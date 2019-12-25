@@ -1,0 +1,39 @@
+/*Global*/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: $color-background;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $brand-font;
+    display: flex;
+}
+
+.container {
+    background-color: $color-light;
+    width: calc(100% - 240px);
+    margin-left: 240px;
+
+
+
+    top: 50px;
+    left: 240px;
+    padding: 0 20px 20px 20px;
+    position: absolute;
+    margin: 20px;
+}
+
+.section {
+    background-color: $color-light;
+}
+
+/*UWAGI
+style czcionek nie wczytują się w klasie body
+*/

@@ -1,0 +1,44 @@
+.mainPage {
+    width: 100%;
+}
+
+.title {
+    color: $color-buttonGreyDark;
+    font-weight: 550;
+    font-size: 25px;
+    border-bottom: 2px solid $color-background;
+    padding: 12px;
+}
+
+.dates{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    align-items: baseline;
+    border-bottom: 1px solid $color-background;
+}
+
+.datesConteiner {
+    padding: 5px 10px;
+    border: 1px solid $color-background;
+    border-radius: 2px;
+    display: flex;
+    margin:10px;
+    align-items: baseline;
+    div {
+        border-right: 1px solid $color-background;
+        padding: 0 40px 0 20px;
+        font-size: 16px;
+    }
+    i {
+        color: $color-background;
+        padding-left: 5px;
+    }
+}
+
+.legendWrap {
+    margin: 0 auto;
+    width: 70%;
+    &table {
+    }
+}

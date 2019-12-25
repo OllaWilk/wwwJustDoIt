@@ -1,0 +1,35 @@
+/*Global*/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: $color-background;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $brand-font;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: calc(100% - 240px);
+    top: 70px;
+    left: 240px;
+    padding: 0 20px 20px 20px;
+    position: absolute;
+}
+
+.section {
+    background-color: $color-light;
+    width: 1400px;
+}
+
+/*UWAGI
+style czcionek nie wczytują się w klasie body
+*/

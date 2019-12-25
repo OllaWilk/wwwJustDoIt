@@ -1,0 +1,38 @@
+/*Global*/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: $color-background;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $brand-font;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    top: 70px;
+    left: 240px;
+    position: absolute;
+    width: 3000px;
+}
+
+.section {
+    background-color: $color-light;
+    top: 70px;
+    left: 240px;
+    position: absolute;
+    //width: calc(100%-240px); NIE DZIAŁA DLACZEGO?
+    //width: 141%; //tu musi być 141% bo szerokość kontenera nie mogę zmienić
+}
+
+/*UWAGI
+style czcionek nie wczytują się w klasie body
+*/

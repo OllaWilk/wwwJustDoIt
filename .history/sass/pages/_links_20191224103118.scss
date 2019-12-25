@@ -1,0 +1,54 @@
+.navigation {
+    width: 240px;
+    height: 100vh;
+    position: fixed;
+    background-color: $color-dark;
+    color: $color-light;
+    padding: 10px;
+}
+
+//Linki
+.links {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+    a {
+    font-family: $brand-font;
+    margin: 20px;
+    justify-content: center;
+}
+
+.linkWraper {
+    font-family: $brand-font;
+    align-items: baseline;
+    font-size: 16px;
+    color: $color-buttonGreyDark;
+    display: flex;
+    justify-content: center;
+    ul {
+        li {
+            display: flex;
+            //padding: 20px 0px;
+            border-bottom: 1px solid $color-background;
+            &:hover {
+                background-color: $color-background;
+            }
+            p {
+                font-weight: bold;
+            }
+        }
+    }
+    a {
+        color: $color-links;
+        font-family: $brand-font;
+        text-decoration: none;
+
+    }
+    i {
+        margin: 0 10px;
+    }
+}
+
+.icon-links {
+    color: $color-buttonOrangeDark;
+}

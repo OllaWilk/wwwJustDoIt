@@ -1,0 +1,25 @@
+/*buttons*/
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: "Inconsolata", monospace;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    background-position: 100% 0;
+    background-size: 300%;
+}
+
+  .btnRefresh {
+    border-color:v$color-buttonOrangeDark;
+    color: $color-buttonOrangeDark;
+}
+
+/*buttons*/
+/*buttons*/
