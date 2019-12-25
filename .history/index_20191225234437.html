@@ -176,37 +176,31 @@
                 </div>
             </div>
 
-            <div div class = "section personalData">
+            <div div class = "section links personalData">
                 <h2  class="title">Personal Data</h2>
                 <div class="form">
-                    <div class = "userData">
-                        <form  method="POST" action="/contact">
-                            <input type="text" name="name" placeholder="Name" minlength="2" maxlength="40" title="Name" required>
-                            <input type="text" name="surname" placeholder="Surname" minlength="2" maxlength="40" title="Surname" required>
-                            <input type="email" name="email" placeholder="Your e-mail" title="Email" required>
-                            <input type="text" name="subject" placeholder="Subject" minlength="2" maxlength="40" title="Write your subject" required>
-                        </form>
-                    </div>
-                    <div class = "userContakt">
-                        <form  method="POST" action="/contact">
-                            <input type="text" name="name" placeholder="Name" minlength="2" maxlength="40" title="Name" required>
-                            <input type="text" name="surname" placeholder="Surname" minlength="2" maxlength="40" title="Surname" required>
-                            <input type="email" name="email" placeholder="Your e-mail" title="Email" required>
-                        </form>
-                    </div>
-                    <div class = "userWallet">
-                        <form  method="POST" action="/contact">
-                            <input type="text" name="name" placeholder="Name" minlength="2" maxlength="40" title="Name" required>
-                        </form>
-                    </div>
-                    <div>
-                        <form class = "userPassword" method="POST" action="/contact">
-                            <input type="text" name="name" placeholder="Name" minlength="2" maxlength="40" title="Name" required>
-                            <input type="text" name="surname" placeholder="Surname" minlength="2" maxlength="40" title="Surname" required>
-                        </form>
-                    </div>      
-                </div>
-                <a href="#" class="btn">Save</a>
+
+                    <div class=" form-position">
+                            <form method="POST" action="/contact">
+                                <h2 class="section-title">Contact</h2>
+                                <input type="text" name="name" placeholder="Your name" minlength="2" maxlength="40" title="Write your name" required>
+                                <input type="email" name="email" placeholder="Your e-mail" title="Write your email" required>
+                                <input type="text" name="subject" placeholder="Subject" minlength="2" maxlength="40" title="Write your subject" required>
+                                <textarea placeholder="Type your message here" name="message"></textarea>
+                                <a href="#" class="btn btn-one">read more</a>
+                            </form>
+                            <div class="contact-description">
+                                <div class="section-subtitle">sales specialist</div>
+                                <p>Aleksandra Wilk</p>
+                                <div class="section-subtitle">address</div>
+                                <p>Oławska 1111<br>
+                                54-099 Wrocław</p>
+                                <div class="section-subtitle">phone</div>
+                                <p>555-987-656</p>
+                            </div>
+                        </div>
+                       
+                    <a href="index.html" id="refresh" class="btnRefrsh btn icon-refresh"></a>
                 </div>
             </div>
 

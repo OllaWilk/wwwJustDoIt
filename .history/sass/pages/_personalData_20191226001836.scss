@@ -1,0 +1,9 @@
+.form {
+    margin: 20px auto;
+    display: flex;
+    div{
+        justify-content: center;
+        border-bottom: 1px solid $color-background;
+    }
+
+}

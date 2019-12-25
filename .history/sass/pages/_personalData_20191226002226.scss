@@ -1,0 +1,12 @@
+.form {
+    margin: 20px auto;
+}
+
+.userData, .userContakt, .userWallet, .userPassword {
+    display: flex;
+
+        justify-content: center;
+
+        border-bottom: 1px solid $color-background;
+
+}

@@ -402,6 +402,7 @@ body {
 
 .section {
   background-color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .navigation {
@@ -672,6 +673,20 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
 .colorLinks {
   color: #F58220;
   margin-left: 320px;
+}
+
+.form {
+  margin: 20px auto;
+  width: 360px;
+}
+
+.userData, .userContakt, .userWallet, .userPassword {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #E3E3E3;
 }
 
 @media (max-width: 750px) {

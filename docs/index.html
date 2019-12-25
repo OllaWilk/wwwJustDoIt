@@ -134,13 +134,13 @@
                         </li>
                         <li>
                             <p>Google</p>
-                            <a href="index.html">www.google.com</a>
+                            <a href="www.google.com">www.google.com</a>
                             <i id="start" class="colorLinks icon-links"></i>
                             <i id="start" class="icon-trash"></i>
                         </li>
                         <li>
                             <p>Facebook</p>
-                            <a href="index.html">www.facebook.com</a>
+                            <a href="www.facebook.com">www.facebook.com</a>
                             <i id="start" class="colorLinks icon-links"></i>
                             <i id="start" class="icon-trash"></i>
                         </li>
@@ -164,7 +164,7 @@
                         </li>
                         <li>
                             <p>Twitter</p>
-                            <a href="index.html">www.twitter.com</a>
+                            <a href="www.twitter.com">www.twitter.com</a>
                             <i id="start" class="colorLinks icon-links"></i>
                             <i id="start" class="icon-trash"></i>
                         </li>
@@ -175,6 +175,41 @@
                     <a href="index.html" id="refresh" class="btn btnAddNew">+ add new</a>
                 </div>
             </div>
+
+            <div div class = "section personalData">
+                <h2  class="title">Personal Data</h2>
+                <div class="form">
+                    <div class = "userData">
+                        <form  method="POST" action="/contact">
+                            <input type="text" name="name" placeholder="Name" minlength="2" maxlength="40" title="Name" required>
+                            <input type="text" name="surname" placeholder="Surname" minlength="2" maxlength="40" title="Surname" required>
+                            <input type="email" name="email" placeholder="Your e-mail" title="Email" required>
+                            <input type="text" name="subject" placeholder="Subject" minlength="2" maxlength="40" title="Write your subject" required>
+                        </form>
+                    </div>
+                    <div class = "userContakt">
+                        <form  method="POST" action="/contact">
+                            <input type="text" name="name" placeholder="Name" minlength="2" maxlength="40" title="Name" required>
+                            <input type="text" name="surname" placeholder="Surname" minlength="2" maxlength="40" title="Surname" required>
+                            <input type="email" name="email" placeholder="Your e-mail" title="Email" required>
+                        </form>
+                    </div>
+                    <div class = "userWallet">
+                        <form  method="POST" action="/contact">
+                            <input type="text" name="name" placeholder="Name" minlength="2" maxlength="40" title="Name" required>
+                        </form>
+                    </div>
+                    <div>
+                        <form class = "userPassword" method="POST" action="/contact">
+                            <input type="text" name="name" placeholder="Name" minlength="2" maxlength="40" title="Name" required>
+                            <input type="text" name="surname" placeholder="Surname" minlength="2" maxlength="40" title="Surname" required>
+                        </form>
+                    </div>      
+                </div>
+                <a href="#" class="btn">Save</a>
+                </div>
+            </div>
+
         </section>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
