@@ -1,9 +1,13 @@
+/*Responsive left menu - hamburger*/
+
 const hamburgerMenuLeft = document.getElementById('hamburger');
 const mobileMenu = document.querySelector('.navigationWraperMobile');
 
 hamburger.addEventListener('click', function(){
     mobileMenu.classList.toggle('active');
 });
+
+/*statistic*/
 
 var ctx = document.getElementById('myChart').getContext('2d');
 

@@ -402,6 +402,7 @@ body {
 
 .navigation {
   width: 240px;
+  height: 100vh;
   position: fixed;
   background-color: #171717;
   color: #ffffff;
@@ -587,7 +588,7 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
 
 .legendWrap table tr td {
   position: relative;
-  padding: 0;
+  padding: 10px;
   border-bottom: 3px solid #E3E3E3;
   width: auto;
 }
@@ -604,8 +605,11 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
 .legendWrap table tr td p {
   position: absolute;
   right: 0;
-  margin: 0;
   font-weight: 500;
+}
+
+.canvas {
+  padding: 20px  20px 20px 0;
 }
 
 .links {
@@ -678,7 +682,7 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
   /*leftNavigationMenu*/
   .navigation {
     width: 100%;
-    height: 25%;
+    height: auto;
   }
   .navigationTop {
     -ms-flex-pack: distribute;
@@ -709,20 +713,48 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
     background-color: #171717;
     z-index: 1;
     line-height: 0;
+    padding: 0 10px;
   }
+  .menagoImg {
+    margin: 25px 0 0 40px;
+  }
+  .menagoImg h2 {
+    font-size: 20px;
+  }
+  .menagoImg img {
+    margin: 10px 10px 0 0;
+  }
+  /*layout*/
   .container {
     left: 0;
     width: 100%;
     top: 90px;
   }
+  /*Main Page - General statistics*/
+  .dates {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .btnRefrsh {
+    width: 100px;
+    margin: 20px 35% 0 35%;
+  }
+  .legendWrap tr {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  /*Links*/
   .linkWraper {
     width: 100%;
   }
   .linkWraper ul li {
-    display: block;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .linkWraper ul li p {
-    width: 100px;
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */

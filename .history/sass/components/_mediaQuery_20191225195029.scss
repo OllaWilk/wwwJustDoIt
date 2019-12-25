@@ -1,0 +1,92 @@
+@media (max-width: 750px) {
+
+    /*topUserMenu*/
+
+    .topMenu {
+        margin: auto;
+        z-index: -1;
+    }
+
+    .topMenuWrapper {
+        display: none;
+    }
+
+    /*leftNavigationMenu*/
+
+    .navigation  {
+        width: 100%;
+        height: auto;
+    }
+
+    .navigationTop {
+        justify-content: space-around;
+        z-index: 1;
+        i {
+            opacity: 1;
+            font-size: 16px;
+            margin-left: 70px;
+            cursor: pointer;
+            &:hover {
+                color: $color-buttonOrangeDark;
+            }
+        }
+    }
+
+    .logo {
+        margin: 10px;
+    }
+
+    .navigationWraperMobile {
+        display: none;
+        width: 100%;
+    }
+
+    .navigationWraperMobile.active {
+        display: block;
+        position: fixed;
+        right: 0;
+        height: 100%;
+        background-color: $color-dark;
+        z-index: 1;
+        line-height: 0;
+        padding: 0 80px;
+    }
+
+    .menagoImg {
+        h2 {
+            font-size: 20px;
+        }
+    }
+
+     /*layout*/
+
+    .container {
+        left: 0;
+        width: 100%;
+        top: 90px;
+    }
+
+    /*Main Page - General statistics*/
+
+    .dates {
+        display: block;
+    }
+
+    .btnRefrsh {
+        display: flex;
+        position: relative;
+        width: 100px;
+    }
+
+    .linkWraper {
+        width: 100%;
+        ul {
+            li {
+            display: block;
+            p {
+                width: 100px;
+            }
+            }
+        }
+    }
+}
