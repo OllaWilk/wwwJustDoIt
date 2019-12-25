@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    width:100%;
+    width:100%; //NIE DZIAŁA DLACZEGO?
     max-width: calc(100% - 240px);
     margin: 0 auto;
     padding-left: 15px;

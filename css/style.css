@@ -376,7 +376,7 @@ html {
 }
 
 *, *::before, *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -389,7 +389,11 @@ body {
 }
 
 .container {
-  width: calc(100% - 240px);
+  width: 100%;
+  max-width: calc(100% - 240px);
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
   top: 70px;
   left: 240px;
   position: absolute;
@@ -729,6 +733,7 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
     left: 0;
     width: 100%;
     top: 90px;
+    max-width: 100%;
   }
   /*Main Page - General statistics*/
   .dates {

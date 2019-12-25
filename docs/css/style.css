@@ -376,7 +376,7 @@ html {
 }
 
 *, *::before, *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -390,6 +390,10 @@ body {
 
 .container {
   width: calc(100% - 240px);
+  max-width: 110px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
   top: 70px;
   left: 240px;
   position: absolute;
