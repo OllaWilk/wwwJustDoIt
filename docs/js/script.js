@@ -1,5 +1,5 @@
 const hamburgerMenuLeft = document.getElementById('hamburger');
-const mobileMenu = document.querySelector('navigationWraperMenu');
+const mobileMenu = document.querySelector('.navigationWraperMobile');
 
 hamburger.addEventListener('click', function(){
     mobileMenu.classList.toggle('active');

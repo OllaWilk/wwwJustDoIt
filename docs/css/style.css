@@ -389,7 +389,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: calc(100% - 240px);
   top: 70px;
   left: 240px;
   position: absolute;
@@ -402,7 +402,6 @@ body {
 
 .navigation {
   width: 240px;
-  height: 100vh;
   position: fixed;
   background-color: #171717;
   color: #ffffff;
@@ -436,20 +435,15 @@ body {
 }
 
 .navigationTop i {
-  font-size: 16px;
-  margin-left: 70px;
-  cursor: pointer;
-}
-
-.navigationTop i:hover {
-  color: #F58220;
+  opacity: 0;
+  cursor: none;
 }
 
 .logo {
   font-family: "Satisfy", cursive;
   font-size: 25px;
   font-weight: 600;
-  margin-left: 10px;
+  margin: 10px auto;
 }
 
 .menuButon {
@@ -673,23 +667,44 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
 }
 
 @media (max-width: 750px) {
+  /*topUserMenu*/
+  .topMenu {
+    margin: auto;
+    z-index: -1;
+  }
   .topMenuWrapper {
     display: none;
   }
+  /*leftNavigationMenu*/
   .navigation {
     width: 100%;
-    height: auto;
+    height: 25%;
   }
   .navigationTop {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    z-index: 1;
+  }
+  .navigationTop i {
+    opacity: 1;
+    font-size: 16px;
+    margin-left: 70px;
+    cursor: pointer;
+  }
+  .navigationTop i:hover {
+    color: #F58220;
+  }
+  .logo {
+    margin: 10px;
   }
   .navigationWraperMobile {
     display: none;
+    width: 100%;
   }
   .navigationWraperMobile.active {
     display: block;
     position: fixed;
+    right: 0;
     height: 100%;
     background-color: #171717;
     z-index: 1;
@@ -698,13 +713,16 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
   .container {
     left: 0;
     width: 100%;
-    top: 100px;
+    top: 90px;
   }
   .linkWraper {
     width: 100%;
   }
-  .topMenu {
-    z-index: -1;
+  .linkWraper ul li {
+    display: block;
+  }
+  .linkWraper ul li p {
+    width: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */

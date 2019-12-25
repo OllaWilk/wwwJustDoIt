@@ -389,7 +389,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: calc(100% - 240px);
   top: 70px;
   left: 240px;
   position: absolute;
@@ -436,20 +436,15 @@ body {
 }
 
 .navigationTop i {
-  font-size: 16px;
-  margin-left: 70px;
-  cursor: pointer;
-}
-
-.navigationTop i:hover {
-  color: #F58220;
+  opacity: 0;
+  cursor: none;
 }
 
 .logo {
   font-family: "Satisfy", cursive;
   font-size: 25px;
   font-weight: 600;
-  margin-left: 10px;
+  margin: 10px auto;
 }
 
 .menuButon {
@@ -479,6 +474,70 @@ body {
   margin: 20px;
 }
 
+.topMenu {
+  background-color: #ffffff;
+  width: calc(100% - 240px);
+  height: 50px;
+  margin-left: 240px;
+  position: fixed;
+}
+
+.topMenuWrapper {
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  width: auto;
+  margin: 5px 10px;
+}
+
+.iconsTopMenu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+  border-left: 2px solid #E3E3E3;
+  padding: 10px 20px 0 20px;
+}
+
+.iconsTopMenu i {
+  display: inline-block;
+}
+
+.iconsTopMenu h3 {
+  font-size: 20px;
+  margin: 0 10px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.iconsTopMenu p {
+  font-size: 16px;
+  margin: 0 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*UWAGI
+inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie działa :first-child a działa :last-child
+
+.iconsTopMenu {
+    display: flex;
+    align-items: baseline;
+    border-left: 2px solid $color-background;
+    padding: 10px 20px 0 20px;
+    i {
+        display:inline-block;
+    }
+    h3 {
+        font-size: 16px;
+        margin: 0 10px;
+        font-weight: bold;
+        :first-child{
+            font-weight: bold;
+        }
+    }
+}
+
+*/
 .title {
   color: #979797;
   font-weight: 550;
@@ -609,9 +668,15 @@ body {
 }
 
 @media (max-width: 750px) {
+  /*topUserMenu*/
+  .topMenu {
+    margin: auto;
+    z-index: -1;
+  }
   .topMenuWrapper {
     display: none;
   }
+  /*leftNavigationMenu*/
   .navigation {
     width: 100%;
     height: auto;
@@ -619,28 +684,50 @@ body {
   .navigationTop {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    z-index: 1;
+  }
+  .navigationTop i {
+    opacity: 1;
+    font-size: 16px;
+    margin-left: 70px;
+    cursor: pointer;
+  }
+  .navigationTop i:hover {
+    color: #F58220;
+  }
+  .logo {
+    margin: 10px;
   }
   .navigationWraperMobile {
     display: none;
+    width: 100%;
   }
   .navigationWraperMobile.active {
     display: block;
     position: fixed;
+    right: 0;
     height: 100%;
     background-color: #171717;
     z-index: 1;
     line-height: 0;
+    padding: 0 80px;
+  }
+  .menagoImg h2 {
+    font-size: 20px;
   }
   .container {
     left: 0;
     width: 100%;
-    top: 100px;
+    top: 90px;
   }
   .linkWraper {
     width: 100%;
   }
-  .topMenu {
-    z-index: -1;
+  .linkWraper ul li {
+    display: block;
+  }
+  .linkWraper ul li p {
+    width: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
