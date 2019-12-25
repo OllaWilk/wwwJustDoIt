@@ -721,7 +721,7 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
   .menagoImg h2 {
     font-size: 20px;
   }
-  .menagoImg img {
+  .menagoImg a img {
     margin: 10px 10px 0 0;
   }
   /*layout*/
@@ -739,11 +739,18 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
     width: 100px;
     margin: 20px 35% 0 35%;
   }
+  .legendWrap {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
   .legendWrap tr {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
+    width: 100%;
+    max-width: 100%;
   }
   /*Links*/
   .linkWraper {
@@ -752,6 +759,8 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
   .linkWraper ul li {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-right: 20px;
+    padding: 0 5px;
   }
   .linkWraper ul li p {
     display: block;

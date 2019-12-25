@@ -739,11 +739,18 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
     width: 100px;
     margin: 20px 35% 0 35%;
   }
+  .legendWrap {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
   .legendWrap tr {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
+    width: 100%;
+    max-width: 100%;
   }
   /*Links*/
   .linkWraper {
