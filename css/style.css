@@ -30,6 +30,10 @@
   margin: 20px;
 }
 
+.btnSave {
+  margin: 30px 0;
+}
+
 /*links*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -675,18 +679,61 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
   margin-left: 320px;
 }
 
-.form {
-  margin: 20px auto;
-  width: 360px;
+.userData {
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.userData, .userContakt, .userWallet, .userPassword {
+.userData form {
+  margin: 20px auto;
+  width: 100%;
+}
+
+.field-wrap {
+  color: #979797;
+  font-size: 16px;
+  padding: 30px 0;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.field-wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.styledField {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #E3E3E3;
+  -ms-grid-column-align: center;
+      justify-items: center;
+  margin: 20px 0;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+}
+
+.styledField p {
+  font-weight: bold;
+  width: 200px;
+}
+
+.styledField input {
+  padding: 5px;
+  width: 300px;
+}
+
+.styledField input:focus {
+  outline: 0;
+  border-color: #F58220;
+}
+
+.btnWrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 @media (max-width: 750px) {
@@ -784,6 +831,13 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
   }
   .linkWraper ul li p {
     display: block;
+  }
+  /*Links*/
+  .styledField p {
+    width: 100px;
+  }
+  .field-wrap {
+    padding: 30px 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

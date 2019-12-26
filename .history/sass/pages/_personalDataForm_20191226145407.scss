@@ -1,0 +1,28 @@
+.userData {
+    display: flex;
+
+    form {
+        margin: 20px auto;
+        width: 100%;
+
+        //background-color: red;
+    }
+}
+
+.field-wrap {
+    color: $color-buttonGreyDark;
+    font-size: 16px;
+    padding: 30px 0;
+    border-bottom: 1px solid $color-background;
+
+
+}
+
+.styledField {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    p {
+        font-weight: bold;
+    }
+}

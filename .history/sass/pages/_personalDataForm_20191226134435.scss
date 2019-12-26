@@ -1,0 +1,20 @@
+.userData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    form {
+        padding: 40px;
+        margin: 20px auto;
+        width: 400px;
+        background-color: red;
+    }
+}
+
+.field-wrap {
+    color: $color-buttonGreyDark;
+    font-size: 16px;
+    margin: 30px;
+    p {
+        font-weight: bold;
+    }
+}
