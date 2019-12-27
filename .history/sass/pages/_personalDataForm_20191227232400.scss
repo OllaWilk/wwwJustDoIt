@@ -1,0 +1,67 @@
+.userData {
+    display: flex;
+    form {
+        margin: 20px auto;
+        width: 100%;
+    }
+}
+
+.field-wrap {
+    color: $color-buttonGreyDark;
+    font-size: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid $color-background;
+    &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.styledField {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 20px 0 10px 0;
+    align-items: baseline;
+    background: none;
+
+    label {
+        font-weight: bold;
+        width: 200px;
+
+    }
+    input, textarea {
+        padding: 10px;
+        width: 300px;
+        border: 1px solid $color-buttonGreyDark;
+        &:focus {
+           // outline: 0;
+            border-color: $color-buttonOrangeDark;
+        }
+    }
+}
+
+.agreement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.agreementTekst{
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.agreementLogo {
+    margin: 0 10px;
+    font-size: 18px;
+}
+.btnWrap {
+    display: flex;
+    justify-content: center;
+}
+
+
+

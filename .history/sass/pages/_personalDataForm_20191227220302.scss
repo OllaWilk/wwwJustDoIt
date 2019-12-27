@@ -1,0 +1,55 @@
+.userData {
+    display: flex;
+    form {
+        margin: 20px auto;
+        width: 100%;
+    }
+}
+
+.field-wrap {
+    color: $color-buttonGreyDark;
+    font-size: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid $color-background;
+    &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.styledField {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 20px 0 10px 0;
+    align-items: baseline;
+    background: none;
+    border: none;
+    border-color: $color-buttonOrangeDark;
+
+    p {
+        font-weight: bold;
+        width: 200px;
+    }
+    input, textarea {
+        padding: 5px;
+        width: 300px;
+        outline: none;
+        &:focus {
+            outline: 0;
+            border-color: $color-buttonOrangeDark;
+        }
+    }
+    label {
+       width: 200px;
+    }
+}
+
+.btnWrap {
+    display: flex;
+    justify-content: center;
+}
+
+
+

@@ -692,7 +692,7 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
 .field-wrap {
   color: #979797;
   font-size: 16px;
-  padding: 30px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #E3E3E3;
 }
 
@@ -702,11 +702,6 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
   clear: both;
 }
 
-.field-wrap div {
-  width: 48%;
-  margin-right: 4%;
-}
-
 .styledField {
   display: -ms-flexbox;
   display: flex;
@@ -714,19 +709,59 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
       justify-content: center;
   -ms-grid-column-align: center;
       justify-items: center;
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
   -ms-flex-align: baseline;
       align-items: baseline;
+  background: none;
 }
 
-.styledField p {
+.styledField label {
   font-weight: bold;
   width: 200px;
 }
 
-.styledField input:focus {
-  outline: 0;
+.styledField input, .styledField textarea {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #979797;
+}
+
+.styledField input:focus, .styledField textarea:focus {
   border-color: #F58220;
+}
+
+.agreement {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-grid-column-align: center;
+      justify-items: center;
+  margin: auto;
+  -ms-flex-align: center;
+      align-items: center;
+  background: none;
+  width: 600px;
+}
+
+.agreement span {
+  margin-right: 20px;
+}
+
+.agreementTekst {
+  text-align: justify;
+}
+
+.agreementLogo {
+  margin: 0;
+  font-size: 18px;
+}
+
+.btnWrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 @media (max-width: 750px) {
@@ -824,6 +859,17 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
   }
   .linkWraper ul li p {
     display: block;
+  }
+  /*Links*/
+  .styledField p {
+    width: 100px;
+  }
+  .styledField input {
+    padding: 5px;
+    width: 200px;
+  }
+  .field-wrap {
+    padding: 30px 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
