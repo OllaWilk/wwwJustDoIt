@@ -26,30 +26,20 @@
     align-items: baseline;
     background: none;
 
-    label, {
+    label {
         font-weight: bold;
         width: 200px;
 
     }
-    input, textarea, select {
+    input, textarea,select {
         padding: 10px;
         border: 1px solid $color-buttonGreyDark;
         &:focus {
             border-color: $color-buttonOrangeDark;
         }
     }
-    select {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background-color: $color-light;
-        width: 220px;
-        background-size: 15px auto;
-        option {
-            color: $color-buttonGreyDark;
-        }
-    }
 }
+
 
 .checkbox {
     margin-left: 40px;

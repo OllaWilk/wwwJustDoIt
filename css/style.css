@@ -720,17 +720,33 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
   width: 200px;
 }
 
-.styledField input, .styledField textarea {
+.styledField input, .styledField textarea, .styledField select {
   padding: 10px;
   border: 1px solid #979797;
 }
 
-.styledField input:focus, .styledField textarea:focus {
+.styledField input:focus, .styledField textarea:focus, .styledField select:focus {
   border-color: #F58220;
 }
 
+.styledField select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  width: 220px;
+  background-size: 15px auto;
+}
+
+.styledField select option {
+  color: #979797;
+}
+
 .checkbox {
-  margin-left: 50px;
+  margin-left: 40px;
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
 }
 
 .agreementLogo {

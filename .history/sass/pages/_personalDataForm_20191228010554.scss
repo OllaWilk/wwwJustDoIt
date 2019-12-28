@@ -31,7 +31,7 @@
         width: 200px;
 
     }
-    input, textarea, select {
+    input, textarea, {
         padding: 10px;
         border: 1px solid $color-buttonGreyDark;
         &:focus {
@@ -42,14 +42,15 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        background-color: $color-light;
-        width: 220px;
-        background-size: 15px auto;
-        option {
-            color: $color-buttonGreyDark;
-        }
-    }
+        background-color: #ffffff;
+        border: 1px solid #000000;
+        padding: 5px 30px 5px 10px;
+        font-size: 14px;
+        display: block;
+        border-radius: 0;
+     }
 }
+
 
 .checkbox {
     margin-left: 40px;

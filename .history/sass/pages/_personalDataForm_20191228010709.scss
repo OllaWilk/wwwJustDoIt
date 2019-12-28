@@ -42,14 +42,13 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        background-color: $color-light;
-        width: 220px;
-        background-size: 15px auto;
-        option {
-            color: $color-buttonGreyDark;
-        }
-    }
+        background-color: #ffffff;
+        //font-size: 16px;
+        display: block;
+        border-radius: 0;
+     }
 }
+
 
 .checkbox {
     margin-left: 40px;

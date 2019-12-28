@@ -41,15 +41,14 @@
     select {
         -webkit-appearance: none;
         -moz-appearance: none;
-        appearance: none;
-        background-color: $color-light;
+        //appearance: none;
+        background-color: #ffffff;
         width: 220px;
-        background-size: 15px auto;
-        option {
-            color: $color-buttonGreyDark;
-        }
+        background-position: right 5px center;
+
     }
 }
+
 
 .checkbox {
     margin-left: 40px;

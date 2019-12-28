@@ -58,6 +58,10 @@
     opacity: 0.5;
 }
 
+input[type="checkbox"]:checked + label {
+    color: $color-buttonOrangeDark;
+}
+
 .agreementLogo {
     margin: 0 10px;
     font-size: 18px;

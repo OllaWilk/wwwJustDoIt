@@ -49,6 +49,10 @@
             color: $color-buttonGreyDark;
         }
     }
+    input[type="checkbox"]:checked + label {
+        color: $color-buttonOrangeDark;
+    }
+
 }
 
 .checkbox {

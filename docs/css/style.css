@@ -720,40 +720,37 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
   width: 200px;
 }
 
-.styledField input, .styledField textarea {
+.styledField input, .styledField textarea, .styledField select {
   padding: 10px;
-  width: 300px;
   border: 1px solid #979797;
 }
 
-.styledField input:focus, .styledField textarea:focus {
+.styledField input:focus, .styledField textarea:focus, .styledField select:focus {
   border-color: #F58220;
 }
 
-.agreement {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-grid-column-align: center;
-      justify-items: center;
-  margin: auto;
-  -ms-flex-align: center;
-      align-items: center;
-  background: none;
-  width: 600px;
+.styledField select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  width: 220px;
+  background-size: 15px auto;
 }
 
-.agreement span {
-  margin-right: 20px;
+.styledField select option {
+  color: #979797;
 }
 
-.agreementTekst {
-  text-align: justify;
+.checkbox {
+  margin-left: 40px;
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
 }
 
 .agreementLogo {
-  margin: 0;
+  margin: 0 10px;
   font-size: 18px;
 }
 
@@ -862,7 +859,8 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
   }
   /*Links*/
   .styledField p {
-    width: 100px;
+    margin-left: 30px;
+    width: auto;
   }
   .styledField input {
     padding: 5px;
@@ -870,6 +868,14 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
   }
   .field-wrap {
     padding: 30px 10px;
+  }
+  /*personalDataForm*/
+  .agreement {
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .checkbox {
+    margin-left: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

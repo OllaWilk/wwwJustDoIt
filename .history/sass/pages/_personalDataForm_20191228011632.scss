@@ -47,15 +47,22 @@
         background-size: 15px auto;
         option {
             color: $color-buttonGreyDark;
+            font-size: 16px;
+            padding: 20px;
         }
     }
 }
+
 
 .checkbox {
     margin-left: 40px;
     width: 20px;
     height: 20px;
     opacity: 0.5;
+    &:checked {
+        color: $color-buttonOrangeDark;
+        border-color: $color-buttonOrangeDark;
+    }
 }
 
 .agreementLogo {
