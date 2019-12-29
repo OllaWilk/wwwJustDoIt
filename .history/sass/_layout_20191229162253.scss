@@ -1,0 +1,34 @@
+/*Global*/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: $color-background;
+    font-size: 16px;
+    line-height: 1.7;
+    display: flex;
+}
+
+.container {
+    width:100%;
+    max-width: calc(100% - 240px);
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 70px;
+    left: 240px;
+    position: absolute;
+    z-index: -1;
+}
+
+//.section {
+ //   background-color: $color-light;
+  //  margin-bottom: 20px;
+    //width: 141%; //tu musi być 141% bo szerokość kontenera nie mogę zmienić
+//}

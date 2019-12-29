@@ -20,27 +20,25 @@
 //]]></script>
 
         <nav class = "navigation">
-            <div class = "navigationWraper">
-                <div class  ="navigationTop">
-                    <h1 class = "logo">Just Do It</h1>
-                    <i id="hamburger" class="fas fa-bars"></i>
-                </div>
-                <div = class="navigationWraperMobile">
-                    <ul>
-                        <li><i id="start" class="icon-general"></i><a class="menuButon" href="index.html">General</a></li>
-                        <li><i id="details" class="icon-details"></i><a class="menuButon" href="index.html">Details </a></li>
-                        <li><i id="links" class="icon-links"></i><a class="menuButon" href="index.html">Links</a></li>
-                        <li><i id="banners" class="icon-banners"></i><a class="menuButon" href="index.html">Banners</a></li>
-                        <li><i id="personal data" class="icon-personaldata"></i><a class="menuButon" href="index.html">Personal Data</a></li>
-                        <li><i id="payout" class="icon-payout"></i><a class="menuButon" href="index.html">Payout</a></li>
-                        <li><i id="postback" class="icon-postback"></i><a class="menuButon" href="index.html">Postback</a></li>
-                    </ul>
-                    <div class = "menagoImg">
-                        <h2>Your Manager</h2>
-                        <a class="menuButon" href = "index.html">
-                            <img src="images/business-woman-746766_1920.jpg">
-                        </img>Luisa</a>
-                    </div>
+            <div class  ="navigationTop">
+                <h1 class = "logo">Just Do It</h1>
+                <i id="hamburger" class="fas fa-bars"></i>
+            </div>
+            <div = class="navigationWraperMobile">
+                <ul class="list titles">
+                    <li><i id="general" class="icon-general"></i><a class="menuButon" href="#page-1">General</a></li>
+                    <li><i id="details" class="icon-details"></i><a class="menuButon" href="index.html">Details </a></li>
+                    <li><i id="links" class="icon-links"></i><a class="menuButon" href="#page-3">Links</a></li>
+                    <li><i id="banners" class="icon-banners"></i><a class="menuButon" href="index.html">Banners</a></li>
+                    <li><i id="personalData" class="icon-personaldata"></i><a class="menuButon" href="#page-5">Personal Data</a></li>
+                    <li><i id="payout" class="icon-payout"></i><a class="menuButon" href="index.html">Payout</a></li>
+                    <li><i id="postback" class="icon-postback"></i><a class="menuButon" href="index.html">Postback</a></li>
+                </ul>
+                <div class = "menagoImg">
+                    <h2>Your Manager</h2>
+                    <a class="menuButon" href = "index.html">
+                        <img src="images/business-woman-746766_1920.jpg">
+                    </img>Luisa</a>
                 </div>
             </div>
         </nav>
@@ -66,7 +64,7 @@
         </header>
 
         <section class = "container">
-            <div class = "section  mainPage">
+            <div id = "page-1" class="page active generalStatistics">
                 <h2  class="title">General Statistics</h2>
                 <div class="dates">
                     <div class="datesConteiner">
@@ -105,7 +103,7 @@
                 </div>
             </div>
 
-            <div class = "section links">
+            <div id = "page-3" class="page active links">
                 <h2  class="title">Links</h2>
                 <div class="btnWraper">
                     <a href="index.html" id="refresh" class="btn btnAddNew">+ add new</a>
@@ -180,26 +178,34 @@
                 </div>
             </div>
 
-            <div class = "section personalDataTable">
+            <div id = "page-5" class="page active personalDataTable">
                 <h2  class="title">Personal Data</h2>
                 <div class = "userData">
-                    <form  method="post" enctype="multipart/form-data" action="js/db.js" autocomplete="on">
+                    <form novalidate method="post" enctype="multipart/form-data" action="js/db.js" autocomplete="on">
                         <fieldset>
                             <div label = "userBasicData" class="field-wrap">
                                 <div class="styledField">
-                                    <label>Name:</label>
+                                    <label>Name:
+                                        <span class="error"></span>
+                                    </label>
                                     <input type="text" name="name" placeholder="Your name" minlength="2" title="Name" required = "">
                                 </div>
                                 <div class="styledField">
-                                    <label>Surname:</label>
+                                    <label>Surname:
+                                        <span class="error"></span>
+                                    </label>
                                     <input type="text" name="surname" placeholder="Your surname" minlength="2" maxlength="64" title="Surname" required = "">
                                 </div>
                                 <div class="styledField">
-                                    <label>Email:</label>
+                                    <label>Email:
+                                        <span class="error"></span>
+                                    </label>
                                     <input type="email" name="email" placeholder="Your e-mail" minlength="2" maxlength="64" autocomplete="off" title="Email" required = "">
                                 </div>
                                 <div class="styledField">
-                                    <label>Phone number:</label>
+                                    <label>Phone number:
+                                            <span class="error"></span>
+                                    </label>
                                     <input type="text" name="phoneNumber" placeholder="Phone number" minlength="6" maxlength="40" title="phone number" required = "">
                                 </div>
                             </div>
@@ -231,20 +237,25 @@
 
                             <div class="field-wrap">
                                 <div class="styledField">
-                                    <label>Password</label>
+                                    <label>Password
+                                        <span class="error"></span>
+                                    </label>
                                     <input type="password" name="password" placeholder="Password" minlength="6" maxlength="40" autocomplete="off" title="Password" required="">
                                 </div>
                                 <div class="styledField">
-                                    <label>Repeat</label>
+                                    <label>Repeat
+                                        <span class="error"></span>
+                                    </label>
                                     <input  type="password" name="repeatPassword" placeholder="Password" minlength="6" maxlength="40" autocomplete="off"  title="Password" required="">
                                 </div>
                             </div>
                             <div class="field-wrap">
                                 <label class="styledField agreement">
-                                    <label class="icon">I agree for my personal data to be collected and used by
-                                    <span class = "logo agreementLogo">Just Do It</span> for purpouse of providing the site functionality.</label>
-                                    <input type="checkbox" name="checkbox" class="checkbox" title="agreement" required="">
-                                </p>
+                                    <p class="icon">I agree for my personal data to be collected and used by
+                                    <span class = "logo agreementLogo">Just Do It</span> for purpouse of providing the site functionality.</p>
+                                    <input id = "checkbox" type="checkbox" name="checkbox" class="checkbox" title="agreement" required="">
+                                    </p>
+                                </label>
                             </div>
                             <div class="btnWrap">
                                 <input type="submit" class = "btn btnSave" value="Save">
@@ -255,12 +266,31 @@
             </div>
         </section>
 
-        <section class = " section contactForm">
-            <div class = "popupMessage">
+        <!--<section class = "modale">
+                <div class="overlay" id="overlay">
 
 
-            </div>
-        </section>
+                    <div class="overlay" id="overlay">
+                        <div class="modal" id="myModal">
+                            <div class="btn-close js--close-modal">x</div>
+                            <div class = "generalStatistics">
+                                <h2  class="title">General Statistics</h2>
+                                <div class="dates">
+                                    <div class="datesConteiner">
+                                        <div class="dateStart">12.11.2019</div>
+                                        <div class="dateEnd">15.11.2019 </div>
+                                        <i id="calendar" class="icon-calendar"></i>
+                                    </div>
+                                    <a href="index.html" id="refresh" class="btnRefrsh btn icon-refresh"></a>
+                                </div>
+                            <button class="js--close-modal">Okay</button>
+                        </div>
+                    </div>
+
+
+                </div>
+        </section>-->
+
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
         <script src="js/script.js"></script>

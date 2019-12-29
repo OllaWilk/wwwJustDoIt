@@ -404,9 +404,12 @@ body {
   z-index: -1;
 }
 
-.section {
-  background-color: #ffffff;
-  margin-bottom: 20px;
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
 }
 
 .navigation {
@@ -418,23 +421,24 @@ body {
   padding: 10px;
 }
 
-.navigationWraper {
-  font-family: "Open Sans", Helvetica, Arial;
-}
-
-.navigationWraper ul {
+.list {
+  list-style-type: none;
   font-size: 16px;
   list-style-type: none;
   color: #E3E3E3;
 }
 
-.navigationWraper ul li {
+.list li {
   margin: 20px 0px;
   padding: 10px;
 }
 
-.navigationWraper ul li:hover {
+.list li:hover {
   border-left: 4px solid #F58220;
+}
+
+.list .active {
+  font-weight: bold;
 }
 
 .navigationTop {
@@ -547,6 +551,11 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
 }
 
 */
+.generalStatistics {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
 .title {
   color: #979797;
   font-weight: 550;
@@ -622,8 +631,9 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
 }
 
 .links {
-  margin-top: 20px;
+  margin-top: 20px 0;
   padding-bottom: 20px;
+  background-color: #ffffff;
 }
 
 .btnWraper {
@@ -677,6 +687,11 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
 .colorLinks {
   color: #F58220;
   margin-left: 320px;
+}
+
+.personalDataTable {
+  background-color: #ffffff;
+  margin: 20px 0;
 }
 
 .userData {
@@ -759,6 +774,12 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+}
+
+.error {
+  color: #F58220;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 750px) {

@@ -1,0 +1,54 @@
+
+//Linki
+.links {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    background-color: $color-light;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.btnWraper {
+    display: flex;
+    justify-content: center;
+}
+
+.btnAddNew {
+    margin: 20px;
+
+}
+
+.linkWraper {
+    font-size: 16px;
+    color: $color-buttonGreyDark;
+    display: flex;
+    justify-content: center;
+    ul {
+        li {
+            display: flex;
+            align-items: baseline;
+            border-bottom: 1px solid $color-background;
+            &:hover {
+                background-color: $color-background;
+            }
+            p {
+                font-weight: bold;
+                margin: 5px 0;
+                width: 320px;
+            }
+        }
+    }
+    a {
+        color: $color-links;
+        text-decoration: none;
+        width: 320px;
+    }
+    i {
+        margin: 0 10px;
+    }
+}
+
+.colorLinks {
+    color: $color-buttonOrangeDark;
+    margin-left: 320px;
+}
