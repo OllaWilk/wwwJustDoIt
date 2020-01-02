@@ -507,6 +507,10 @@ body {
   font-size: 16px;
   margin: 0 10px;
   text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .menuButon:hover {
@@ -526,6 +530,12 @@ body {
   height: 55px;
   width: 55px;
   margin: 20px;
+}
+
+.menagoButtonName {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .topMenu {

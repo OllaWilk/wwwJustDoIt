@@ -46,8 +46,7 @@
     font-size: 16px;
     margin: 0 10px;
     text-decoration: none;
-    display: flex;
-    align-items: center;
+
     &:hover {
         color: $color-background;
         text-decoration: none;
@@ -74,5 +73,4 @@
 .menagoButtonName{
     font-weight: bold;
     font-size: 16px;
-    margin-top: 10px;
 }

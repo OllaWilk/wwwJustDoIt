@@ -615,11 +615,16 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
       align-items: center;
   overflow: auto;
   padding: 30px;
+  display: none;
 }
 
 .overlay.show {
   display: -ms-flexbox;
   display: flex;
+}
+
+.overlay::webkit-scrollbar {
+  display: none;
 }
 
 .modal {
@@ -628,6 +633,7 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
   background-color: #ffffff;
   position: relative;
   padding: 30px;
+  display: none;
 }
 
 .modal.show {

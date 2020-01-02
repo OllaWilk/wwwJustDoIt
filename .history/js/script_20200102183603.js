@@ -171,6 +171,8 @@
 
     /*cancel quit*/
 
+    const quitButton = document.getElementById('iconQuit')
+
     function closeModal() {
         document.getElementById('overlay').classList.remove('show')
       }
