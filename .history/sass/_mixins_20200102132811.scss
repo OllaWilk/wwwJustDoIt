@@ -1,0 +1,59 @@
+/*buttons*/
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid $color-buttonOrangeDark;
+  background-color: $color-buttonOrangeDark;
+  color: $color-light;
+  width: 100px;
+  &:hover {
+    background-color: $color-light;
+    color: $color-buttonGreyDark;
+    border: 1px solid $color-buttonGreyDark;
+  }
+}
+
+.btnWraper {
+  display: flex;
+  justify-content: center;
+}
+
+.btnRefrsh {
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+}
+
+.btnSave {
+  margin: 30px 0;
+}
+
+.btnAddNew {
+  margin: 20px;
+}
+
+.btnQuit {
+  margin: 0 0 0 10px;
+  justify-content: center;
+}
+
+#cancel {
+  background-color: $color-buttonGreyDark;
+  border: 1px solid $color-buttonGreyDark;
+  &:hover {
+    background-color: $color-light;
+    color: $color-buttonGreyDark;
+    border: 1px solid $color-buttonGreyDark;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+/*links*/

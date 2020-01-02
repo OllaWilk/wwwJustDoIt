@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+  }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+
+  overflow: auto;
+  padding: 30px;
+
+ // display: none;
+}
+
+.overlay.show {
+  display: flex;
+}
+
+.overlay::webkit-scrollbar {
+  display: none;
+}
+
+.modal {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  position: relative;
+  padding: 30px;
+  //display: none;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+}
+
+/*Quit*/
+
+.quit {
+  background-color: $color-light;
+  width: 350px;
+  height: 150px;
+  margin: 50vh auto;
+  padding-bottom: 20px;
+}
+
+.question {
+  color: $color-buttonGreyDark;
+  font-weight: 550;
+  font-size: 20px;
+  border-bottom: 2px solid $color-background;
+  padding: 20px;
+}
+
+/*Menago contact*/
+
+.menagoContact {
+  background-color: $color-light;
+  width: 900px;
+  height: 200px;
+  margin: 50vh auto;
+  padding-bottom: 20px;
+    h2 {
+      font-size: 16px;
+    }
+}
+
+.menagoPhotoContact {
+  border-bottom: 2px solid $color-background;
+  padding: 10px;
+}
+
+.menagoImgWraper {
+    color: $color-buttonGreyDark;
+    font-weight: 550;
+    font-size: 25px;
+    display: flex;
+}
+
+.menagoImg {
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  margin: 20px;
+}
+
+.messageWraper {
+  display: flex;
+  justify-content: center;
+}
+
+/*login*/
+
+.login {
+  background-color: $color-light;
+  width: 900px;
+  height: 200px;
+  margin: 50vh auto;
+  padding-bottom: 20px;
+}
+
+.loginForm {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 30px;
+}
+
+.loginInput {
+  border: 2px solid $color-background;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 10px;
+  align-items: baseline;
+  color: $color-buttonGreyDark;
+  i {
+    padding: 10px;
+  }
+  input, textarea {
+    padding: 10px;
+    border:none;
+    background: transparent;
+    outline: none;
+}
+}

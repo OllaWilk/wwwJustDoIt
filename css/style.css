@@ -24,6 +24,14 @@
   border: 1px solid #979797;
 }
 
+.btnWraper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0 10%;
+}
+
 .btnRefrsh {
   width: 40px;
   height: 40px;
@@ -32,6 +40,36 @@
 
 .btnSave {
   margin: 30px 0;
+}
+
+.btnAddNew {
+  margin: 20px;
+}
+
+.btnQuit {
+  margin: 20px;
+}
+
+.btnOnlineMenago {
+  border: 1px solid #04AE00;
+  background-color: #04AE00;
+  width: 40px;
+  height: 20px;
+  font-size: 11px;
+  margin: 30px 10px 0 10px;
+  padding: 0;
+  cursor: none;
+}
+
+#cancel {
+  background-color: #979797;
+  border: 1px solid #979797;
+}
+
+#cancel:hover {
+  background-color: #ffffff;
+  color: #979797;
+  border: 1px solid #979797;
 }
 
 /*links*/
@@ -577,6 +615,7 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
       align-items: center;
   overflow: auto;
   padding: 30px;
+  display: none;
 }
 
 .overlay.show {
@@ -594,6 +633,7 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
   background-color: #ffffff;
   position: relative;
   padding: 30px;
+  display: none;
 }
 
 .modal.show {
@@ -607,13 +647,124 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
   padding: 5px 10px;
 }
 
+/*Quit*/
+.quit {
+  background-color: #ffffff;
+  width: 350px;
+  height: 150px;
+  margin: 50vh auto;
+  padding-bottom: 20px;
+}
+
+.question {
+  color: #979797;
+  font-weight: 550;
+  font-size: 20px;
+  border-bottom: 2px solid #E3E3E3;
+  padding: 20px;
+}
+
+/*Menago contact*/
+.menagoContact {
+  background-color: #ffffff;
+  width: 900px;
+  margin: 50vh auto;
+  padding-bottom: 20px;
+}
+
+.menagoContact h2 {
+  font-size: 16px;
+}
+
+.menagoPhotoContact {
+  border-bottom: 2px solid #E3E3E3;
+}
+
+.menagoWraper {
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid #E3E3E3;
+}
+
+.menagoImg {
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  margin: 20px;
+}
+
+.nameMenago {
+  font-size: 25px;
+  font-weight: bold;
+  color: #171717;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.messageWraper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+textarea {
+  width: 500px;
+  border: 2px solid #E3E3E3;
+  background: transparent;
+  color: #979797;
+  height: 35px;
+  margin: 30px;
+  font-size: 16px;
+  outline: none;
+}
+
+/*login*/
+.login {
+  background-color: #ffffff;
+  width: 900px;
+  height: 200px;
+  margin: 50vh auto;
+  padding-bottom: 20px;
+}
+
+.loginForm {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+  margin-top: 30px;
+}
+
+.loginInput {
+  border: 2px solid #E3E3E3;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 10px;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+  color: #979797;
+}
+
+.loginInput i {
+  padding: 10px;
+}
+
+.loginInput input, .loginInput textarea {
+  padding: 10px;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
 .title {
   color: #979797;
   font-weight: 550;
   font-size: 25px;
   border-bottom: 2px solid #E3E3E3;
   padding: 12px;
-  margin: 0 20px;
 }
 
 .dates {
@@ -679,17 +830,6 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
 
 .canvas {
   padding: 20px  20px 20px 0;
-}
-
-.btnWraper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-}
-
-.btnAddNew {
-  margin: 20px;
 }
 
 .linkWraper {
