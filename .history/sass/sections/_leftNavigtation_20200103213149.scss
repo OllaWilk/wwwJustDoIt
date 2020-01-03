@@ -1,0 +1,79 @@
+.navigation {
+    width: 240px;
+    height: 100vh;
+    position: fixed;
+    background-color: $color-dark;
+    color: $color-light;
+    padding: 10px;
+}
+
+.list {
+    list-style-type: none;
+    color: $color-background;
+    li {
+        display: flex;
+        margin: 20px 0px;
+        padding: 10px;
+        &:hover {
+            border-left: 4px solid $color-buttonOrangeDark;
+        }
+        .active {
+            font-weight: bold;
+        }
+    }
+    i {
+
+    }
+}
+
+.navigationTop {
+    display: flex;
+    align-items: baseline;
+    i {
+        display: none;
+    }
+}
+
+.logo {
+    font-family: $logo;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+.menuButon {
+    color: $color-background;
+    font-family: $brand-font;
+    font-size: 16px;
+    margin: 0 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    &:hover {
+        color: $color-background;
+        text-decoration: none;
+    }
+}
+
+.menagoImg {
+    h2 {
+        font-size: 25px;
+        font-weight: 600;
+        color: $color-background;
+        margin: 25px 0 10px 10px;
+    }
+    a {
+        img {
+            border-radius: 50%;
+            height: 55px;
+            width: 55px;
+            margin: 20px;
+        }
+    }
+}
+
+.menagoButtonName{
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}

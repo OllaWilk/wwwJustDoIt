@@ -16,6 +16,7 @@
   background-color: #F58220;
   color: #ffffff;
   width: 100px;
+  height: 40px;
 }
 
 .btn:hover {
@@ -33,17 +34,14 @@
 }
 
 .btnRefrsh {
-  width: 40px;
-  height: 40px;
-  margin: 20px;
+  width: 38px;
+  height: 38px;
+  margin-left: 15px;
+  padding-top: 5px;
 }
 
 .btnSave {
   margin: 30px 0;
-}
-
-.btnAddNew {
-  margin: 20px;
 }
 
 .btnQuit {
@@ -72,7 +70,6 @@
   border: 1px solid #979797;
 }
 
-/*links*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -428,15 +425,15 @@ body {
   line-height: 1.7;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Open Sans", Helvetica, Arial;
 }
 
 .container {
   width: 100%;
   max-width: calc(100% - 240px);
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  top: 70px;
+  padding: 0 15px;
+  top: 50px;
   left: 240px;
   position: absolute;
   z-index: -1;
@@ -464,12 +461,12 @@ body {
 
 .list {
   list-style-type: none;
-  font-size: 16px;
-  list-style-type: none;
   color: #E3E3E3;
 }
 
 .list li {
+  display: -ms-flexbox;
+  display: flex;
   margin: 20px 0px;
   padding: 10px;
 }
@@ -490,8 +487,7 @@ body {
 }
 
 .navigationTop i {
-  opacity: 0;
-  cursor: none;
+  display: none;
 }
 
 .logo {
@@ -519,7 +515,7 @@ body {
 }
 
 .menagoImg h2 {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   color: #E3E3E3;
   margin: 25px 0 10px 10px;
@@ -560,7 +556,7 @@ body {
   -ms-flex-align: baseline;
       align-items: baseline;
   border-left: 2px solid #E3E3E3;
-  padding: 10px 20px 0 20px;
+  padding: 5px 20px 0 20px;
 }
 
 .iconsTopMenu i {
@@ -571,13 +567,13 @@ body {
   font-size: 20px;
   margin: 0 10px;
   font-weight: bold;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", Helvetica, Arial;
 }
 
 .iconsTopMenu p {
   font-size: 16px;
   margin: 0 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", Helvetica, Arial;
 }
 
 #iconQuit,
@@ -600,7 +596,7 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
         font-size: 16px;
         margin: 0 10px;
         font-weight: bold;
-        :first-child{
+        &:first-child{
             font-weight: bold;
         }
     }
@@ -699,7 +695,6 @@ inny krótszy zapisz gdzie p z 52 linijki html jest zamienione na h3: nie dział
 .menagoImg {
   border-radius: 50%;
   height: 55px;
-  width: 55px;
   margin: 20px;
 }
 
@@ -782,7 +777,7 @@ textarea {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  padding: 20px 30px;
+  padding: 35px;
   -ms-flex-align: baseline;
       align-items: baseline;
   border-bottom: 1px solid #E3E3E3;
@@ -829,13 +824,13 @@ textarea {
   font-size: 16px;
   font-weight: bold;
   color: #979797;
-  padding-right: 30px;
 }
 
 .legendWrap table tr td p {
-  position: absolute;
   right: 0;
   font-weight: 500;
+  position: absolute;
+  margin: 0;
 }
 
 .canvas {
@@ -992,7 +987,7 @@ textarea {
     z-index: 1;
   }
   .navigationTop i {
-    opacity: 1;
+    display: block;
     font-size: 16px;
     margin-left: 70px;
     cursor: pointer;
@@ -1018,10 +1013,11 @@ textarea {
     padding: 0 10px;
   }
   .menagoImg {
-    margin: 25px 0 0 40px;
+    margin: 35px 0 0 40px;
   }
   .menagoImg h2 {
     font-size: 20px;
+    margin: 25px 0px;
   }
   .menagoImg a img {
     margin: 10px 10px 0 0;
@@ -1087,6 +1083,9 @@ textarea {
   }
   .checkbox {
     margin-left: 10px;
+  }
+  .userData {
+    padding: 0 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
